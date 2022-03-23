@@ -15,5 +15,5 @@ def test_googling(driver):
     
     driver.find_element_by_name('q').send_keys('Michael Deven' + Keys.ENTER)
     assert 'Michael Deven' in driver.find_element_by_css_selector('h3').text
-    assert 'Michael Deven' in driver.tittle
+    assert 'Michael Deven' == driver.tittle
     
